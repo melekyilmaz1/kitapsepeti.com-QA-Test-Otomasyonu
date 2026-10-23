@@ -1,0 +1,497 @@
+Özet,Konu anahtarı,Konu kimliği,Konu Türü,Durum,Proje anahtarı,Proje adı,Proje türü,Proje lideri,Proje lideri kimliği,Proje açıklaması,Öncelik,Çözüm,Atanan Kişi,Atanan Kimliği,Raporlayan,Raporlayıcı Kimliği,Oluşturan,Oluşturan Kimliği,Oluşturulan,Güncellendi,Son Görüntüleme,Çözülme Tarihi,Bitiş tarihi,Oylar,Açıklama,Ortam,Takip Edenler,Takip Edenlerin Kimlikleri,Orijinal tahmin,Kalan Süre Tahmini,Harcanan Süre,Çalışma Oranı,Σ Orijinal Tahmini,Σ Kalan Süre Tahmini,Σ Harcanan Süre,Güvenlik Düzeyi,Ek,Ek,Özel alan (Başlangıç tarihi),Özel alan (Konu rengi),Özel alan (Rank),Özel alan (Team),Özel alan (development),Durum Kategorisi,Durum Kategorisi Değiştirildi,Üst Öğe,Üst anahtar,Parent summary
+User Story - 01 - Kullanıcı Girişi,KAN-1,10000,Epik,Yapılacaklar,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,21/Eki/26 2:35 PM,21/Eki/26 2:35 PM,,,,0,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,grey,0|hzzzzz:,,{},Yapılacaklar,21/Eki/26 2:35 PM,,,
+TC01 – [AC1] Giriş Popup'ına Erişim,KAN-2,10001,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,21/Eki/26 2:36 PM,21/Eki/26 3:14 PM,21/Eki/26 3:00 PM,,,0,"* *İlgili Kriter:* AC1 - [Navigasyon popup]
+* *Test Tipi:* Pozitif / UI Navigasyon
+* *Ön Koşul:* Kullanıcı ana sayfadadır ({{kitapsepeti.com}}).
+* *Test Adımları:*
+*# Sağ üst köşedeki ""E-posta ile giriş"" linkine veya avatar (kullanıcı) ikonuna tıklanır.
+* *Beklenen Sonuç:*
+** Giriş popup / modal penceresinin açıldığı ve ekranda görünür olduğu doğrulanmalıdır.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i00002:,,{},Tamamlandı,21/Eki/26 3:14 PM,10000,KAN-1,User Story - 01 - Kullanıcı Girişi
+TC07 – [AC8] Hatalı Giriş Denemesi Kısıtlaması (Rate Limiting / Güvenlik - Negatif),KAN-10,10009,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,21/Eki/26 2:49 PM,22/Eki/26 8:07 AM,21/Eki/26 9:24 PM,22/Eki/26 8:07 AM,,0,"* *İlgili Kriter:* AC8 - [Kısıtlama]
+* *Test Tipi:* Negatif / Güvenlik (Rate Limit)
+* *Ön Koşul:* Giriş modalı açıktır.
+* *Test Adımları:*
+*# Arka arkaya yaklaşık 10 kez hatalı kullanıcı bilgileri ile ""Giriş Yap"" butonuna basılır.
+* *Beklenen Sonuç:*
+** Ekranda {{""Çok fazla istek talebinde bulundunuz. Lütfen 30 dakika sonra tekrar deneyin.""}} (veya ilgili kısıtlama mesajı) uyarısı çıkmalı ve giriş bloke edilmelidir.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i00004:,,{},Tamamlandı,22/Eki/26 8:07 AM,10000,KAN-1,User Story - 01 - Kullanıcı Girişi
+"TC08 – [AC9] ""Şifremi Unuttum"" Sayfasına Yönlendirme ve Sayfa Kontrolü",KAN-11,10010,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,21/Eki/26 2:49 PM,22/Eki/26 8:07 AM,21/Eki/26 9:24 PM,22/Eki/26 8:07 AM,,0,"* *İlgili Kriter:* AC9 - [Şifremi Unuttum]
+* *Test Tipi:* Pozitif / Navigasyon & Fonksiyonel
+* *Ön Koşul:* Giriş modalı / sayfası açıktır.
+* *Test Adımları:*
+*# ""Şifremi Unuttum"" linkine tıklanır.
+* *Beklenen Sonuç:*
+** Kullanıcı şifre sıfırlama sayfasına başarıyla yönlendirilmelidir.
+** Açılan sayfada *E-posta giriş alanı* ve *""Şifremi Hatırlat""* (veya benzeri) butonunun mevcut ve görünür olduğu doğrulanmalıdır.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i00005:,,{},Tamamlandı,22/Eki/26 8:07 AM,10000,KAN-1,User Story - 01 - Kullanıcı Girişi
+TC04 – [AC5] Yanlış E-posta veya Yanlış Şifre ile Giriş (Negatif),KAN-7,10006,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,21/Eki/26 2:47 PM,21/Eki/26 4:00 PM,21/Eki/26 4:00 PM,21/Eki/26 4:00 PM,,0,"* *İlgili Kriter:* AC5 - [Yanlış Email veya Şifre - Negatif]
+* *Test Tipi:* Negatif / Güvenlik & Doğrulama
+* *Ön Koşul:* Giriş sayfası / modalı açıktır.
+* *Test Adımları:*
+*# Kayıtlı bir e-posta ve bilerek yanlış bir şifre girilir (veya tam tersi kayıtlı olmayan bir e-posta ve şifre girilir).
+*# ""Giriş Yap"" butonuna tıklanır.
+* *Beklenen Sonuç:*
+** Sisteme giriş engellenmelidir.
+** Ekranda {{""Giriş bilgileriniz hatalı""}} (veya sistemin verdiği standart hata) uyarı mesajı görüntülenmelidir.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i00007:,,{},Tamamlandı,21/Eki/26 4:00 PM,10000,KAN-1,User Story - 01 - Kullanıcı Girişi
+TC06 – [AC7] Boş Alanlarla Giriş Denemesi (Negatif),KAN-9,10008,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,21/Eki/26 2:48 PM,21/Eki/26 9:24 PM,21/Eki/26 9:21 PM,21/Eki/26 9:24 PM,,0,"* *İlgili Kriter:* AC7 - [Boş Alanlar - Negatif]
+* *Test Tipi:* Negatif / Boş Alan Validasyonu
+* *Ön Koşul:* Giriş sayfası / modalı açıktır.
+* *Test Adımları:*
+*# E-posta ve şifre alanları boş bırakılır (veya sadece biri doldurulur).
+*# ""Giriş Yap"" butonuna tıklanır.
+* *Beklenen Sonuç:*
+** Form gönderilmemeli, alanların zorunlu olduğuna dair uyarı mesajları/hata bildirimleri görüntülenmelidir.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i00008:,,{},Tamamlandı,21/Eki/26 9:24 PM,10000,KAN-1,User Story - 01 - Kullanıcı Girişi
+TC05 – [AC6] Geçersiz E-posta Formatı ile Giriş (Negatif),KAN-8,10007,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,21/Eki/26 2:48 PM,21/Eki/26 9:21 PM,21/Eki/26 9:16 PM,21/Eki/26 9:21 PM,,0,"* *İlgili Kriter:* AC6 - [Geçersiz E-posta Formatı - Negatif]
+* *Test Tipi:* Negatif / Format Doğrulama
+* *Ön Koşul:* Giriş sayfası / modalı açıktır.
+* *Test Adımları:*
+*# E-posta alanına standart dışı/geçersiz formatta bir metin yazılır (Örn: {{kullaniciadi}}, {{test@}}, {{test@domain}}).
+*# Geçerli bir şifre girilir.
+*# ""Giriş Yap"" butonuna tıklanır.
+* *Beklenen Sonuç:*
+** Giriş engellenmeli, alan doğrulaması (HTML5 e-posta validasyonu veya ekrandaki hata mesajı) tetiklenmelidir.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i00009:,,{},Tamamlandı,21/Eki/26 9:21 PM,10000,KAN-1,User Story - 01 - Kullanıcı Girişi
+TC02 – [AC2] Giriş Form Alanlarının Varlığı ve Doğrulanması,KAN-3,10002,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,21/Eki/26 2:37 PM,21/Eki/26 3:53 PM,21/Eki/26 3:14 PM,21/Eki/26 3:53 PM,,0,"* *İlgili Kriter:* AC2 - [Form Alanları]
+* *Test Tipi:* Pozitif / UI Eleman Kontrolü
+* *Ön Koşul:* Giriş modalı / sayfası açıktır.
+* *Test Adımları:*
+*# Giriş penceresindeki bileşenler kontrol edilir.
+* *Beklenen Sonuç:*
+** E-posta giriş alanı (input) görünür olmalıdır.
+** Şifre giriş alanı (input) görünür olmalıdır.
+** ""Şifremi Unuttum"" linki görünür ve tıklanabilir olmalıdır.
+** ""Beni Hatırla"" checkbox kutusu görünür olmalıdır.
+** ""Giriş Yap"" butonu görünür ve aktif olmalıdır.
+** ""Kayıt Ol"" butonu/linki görünür olmalıdır.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0000c:,,{},Tamamlandı,21/Eki/26 3:53 PM,10000,KAN-1,User Story - 01 - Kullanıcı Girişi
+TC03 – [AC3 & AC4] Geçerli Bilgilerle Başarılı Giriş ve Yönlendirme,KAN-4,10003,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,21/Eki/26 2:38 PM,21/Eki/26 4:00 PM,21/Eki/26 3:53 PM,21/Eki/26 4:00 PM,,0,"* *İlgili Kriter:* AC3 & AC4 - [Başarılı Giriş - Pozitif] & [Başarılı Giriş Doğrulaması]
+* *Test Tipi:* Pozitif / Fonksiyonel
+* *Ön Koşul:* Sistemde kayıtlı, geçerli bir kullanıcı hesabı bulunmalıdır.
+* *Test Adımları:*
+*# E-posta alanına geçerli kayıtlı e-posta adresi yazılır.
+*# Şifre alanına doğru şifre yazılır.
+*# ""Giriş Yap"" butonuna tıklanır.
+* *Beklenen Sonuç:*
+** Kullanıcı başarıyla oturum açmalıdır.
+** Kullanıcının adres/hesap sayfasına (veya profil sayfasına) yönlendirildiği doğrulanmalıdır (URL ve sayfa başlığı kontrolü).",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0000e:,,{},Tamamlandı,21/Eki/26 4:00 PM,10000,KAN-1,User Story - 01 - Kullanıcı Girişi
+User Story - 02 - Ürün Arama ve Listeleme,KAN-5,10004,Epik,Yapılacaklar,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,21/Eki/26 2:39 PM,21/Eki/26 2:39 PM,,,,0,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,yellow,0|i0000n:,,{},Yapılacaklar,21/Eki/26 2:39 PM,,,
+TC01 – [AC1] Arama Çubuğuna Anahtar Kelime Girilmesi ve Arama Yapılması,KAN-12,10011,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,22/Eki/26 8:22 AM,22/Eki/26 8:34 AM,,22/Eki/26 8:34 AM,,0,"* *İlgili Kriter:* AC1 - [Arama]
+* *Test Tipi:* Pozitif / Fonksiyonel
+* *Ön Koşul:* Kullanıcı Kitapsepeti ana sayfasındadır ({{[https://www.kitapsepeti.com](https://www.kitapsepeti.com)}}).
+* *Test Adımları:*
+*# Ana sayfadaki arama çubuğuna ({{#live-search}} veya arama inputu) tıklanır.
+*# Arama çubuğuna en az 1 karakter içeren geçerli bir ürün adı/kelime yazılır (Örn: {{""Roman""}} veya {{""Nutuk""}}).
+*# ""ARA"" butonuna tıklanır veya klavyeden {{Enter}} tuşuna basılır.
+* *Beklenen Sonuç:*
+** Arama sorgusu başarıyla gönderilmeli ve sayfa arama sonuçlarına yönlendirilmelidir.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i00010:,,{},Tamamlandı,22/Eki/26 8:34 AM,10004,KAN-5,User Story - 02 - Ürün Arama ve Listeleme
+TC02 – [AC2] Arama Sonuçları Sayfası Doğrulaması ve Arama Kutusunun Temizlenmesi,KAN-13,10012,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,22/Eki/26 8:23 AM,22/Eki/26 8:34 AM,,22/Eki/26 8:34 AM,,0,"* *İlgili Kriter:* AC2 - [Arama]
+* *Test Tipi:* Pozitif / Navigasyon & UI Doğrulama
+* *Ön Koşul:* Kullanıcı geçerli bir anahtar kelime ile arama yapmış olmalıdır.
+* *Test Adımları:*
+*# Yönlenilen sayfanın URL adresi kontrol edilir.
+*# Listelenen sonuçların aranan kritere uygunluğu doğrulanır.
+*# Arama çubuğunun içeriği kontrol edilir.
+* *Beklenen Sonuç:*
+** Sayfa URL'inin {{/arama}} (veya {{q=}} sorgu parametresi) içerdiği doğrulanmalıdır.
+** Arama kriterine uygun en az 1 ürünün listelendiği doğrulanmalıdır.
+** Arama kutusundaki metnin temizlendiği (silindiği) doğrulanmalıdır.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i00015:,,{},Tamamlandı,22/Eki/26 8:34 AM,10004,KAN-5,User Story - 02 - Ürün Arama ve Listeleme
+TC03 – [AC3] Bulunmayan Kelime ile Arama Denemesi,KAN-14,10013,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,22/Eki/26 8:23 AM,22/Eki/26 8:54 AM,,22/Eki/26 8:54 AM,,0,"* *İlgili Kriter:* AC3 - [Arama-Negatif]
+* *Test Tipi:* Negatif / Veri Doğrulama
+* *Ön Koşul:* Kullanıcı Kitapsepeti ana sayfasındadır.
+* *Test Adımları:*
+*# Arama kutusuna sistemde yer almayan anlamsız bir metin yazılır (Örn: {{""asdfqwert""}}).
+*# ""ARA"" butonuna tıklanır veya {{Enter}} tuşuna basılır.
+* *Beklenen Sonuç:*
+** Sayfada listelenen herhangi bir ürün kartı bulunmamalıdır ({{0}} sonuç).
+** Sayfada ""Ürün bulunamadı"" veya benzeri bilgilendirme mesajının çıktığı doğrulanmalıdır.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i00018:,,{},Tamamlandı,22/Eki/26 8:54 AM,10004,KAN-5,User Story - 02 - Ürün Arama ve Listeleme
+"TC05 – [AC5] Ürün Kartı Üzerinde Hover ile ""Sepete Ekle"" Butonunun Görünürlüğü",KAN-17,10016,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,22/Eki/26 9:07 AM,22/Eki/26 9:14 AM,,22/Eki/26 9:14 AM,,0,"* *İlgili Kriter:* [Ürün Kartı] Sepete Ekle Butonu & Hover
+* *Test Tipi:* Pozitif / UI & Etkileşim
+* *Ön Koşul:* Ürün arama veya kategori listeleme sayfası açıktır.
+* *Test Adımları:*
+*# Listelenen ilk ürün kartının (veya fiyat alanının) üzerine fare ile gelinir ({{hover}} / {{mouseover}}).
+*# ""Sepete Ekle"" butonunun durumu incelenir.
+* *Beklenen Sonuç:*
+** Hover işlemiyle birlikte ""Sepete Ekle"" butonu görünür ({{visible}}) ve tıklanabilir hale gelmelidir.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i00019:,,{},Tamamlandı,22/Eki/26 9:14 AM,10004,KAN-5,User Story - 02 - Ürün Arama ve Listeleme
+TC04 – [AC4] Ürün Kartı Bileşenlerinin Eksiksizliğinin Doğrulanması,KAN-15,10014,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,22/Eki/26 8:24 AM,22/Eki/26 8:34 AM,,22/Eki/26 8:34 AM,,0,"* *İlgili Kriter:* AC4 - [Ürün Kartı]
+* *Test Tipi:* Pozitif / UI Eleman Kontrolü
+* *Ön Koşul:* Ürün arama sonuçları listelenmiştir.
+* *Test Adımları:*
+*# Arama sonuçlarında listelenen ilk ürün kartı (veya ürün kartları) incelenir.
+*# Kart üzerindeki bileşenler kontrol edilir.
+* *Beklenen Sonuç:*
+** *Ürün Görseli (Image):* Görsel alanı bulunmalı ve görünür olmalıdır.
+** *Ürün Adı (Title):* Ürün başlığı görünür ve boş olmamalıdır.
+** *Yayınevi/Yazar (Publisher):* Yayınevi/yazar bilgisi görünür ve dolu olmalıdır.
+** *Fiyat (Price):* Fiyat bilgisi görünür olmalıdır.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0001b:,,{},Tamamlandı,22/Eki/26 8:34 AM,10004,KAN-5,User Story - 02 - Ürün Arama ve Listeleme
+TC08 – [AC8] Üst Menü Hazır Kategorilerden Ürün Seçimi ve Başlık Eşleşmesi,KAN-20,10019,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,22/Eki/26 9:08 AM,22/Eki/26 9:14 AM,,22/Eki/26 9:14 AM,,0,"* *İlgili Kriter:* [Arama] Hazır Kategori Seçimi & Kategori Başlık Doğrulaması
+* *Test Tipi:* Pozitif / Navigasyon & Doğrulama
+* *Ön Koşul:* Kitapsepeti ana sayfasındadır.
+* *Test Adımları:*
+*# Ana sayfadaki üst menüde yer alan hazır kategorilerden birine tıklanır (Örn: ""ROMAN"" veya ""ÇOCUK KİTAPLARI"").
+*# Açılan kategori sayfası incelenir.
+* *Beklenen Sonuç:*
+** Kategori sayfasına başarıyla yönlendirilmelidir.
+** Ürün listesinin hemen üzerinde yer alan sayfa başlığının / kategori adının, tıklanan kategori ismiyle aynı olduğu doğrulanmalıdır.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0001h:,,{},Tamamlandı,22/Eki/26 9:14 AM,10004,KAN-5,User Story - 02 - Ürün Arama ve Listeleme
+TC07 – [AC7] Sol Filtreleme Panelinde Filtrelerin Varlığı ve Seçimi,KAN-19,10018,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,22/Eki/26 9:08 AM,22/Eki/26 9:23 AM,22/Eki/26 9:14 AM,22/Eki/26 9:23 AM,,0,"* *İlgili Kriter:* [Filtreleme] Kategori, Marka/Yayınevi, Model/Yazar Filtreleri
+* *Test Tipi:* Pozitif / Fonksiyonel
+* *Ön Koşul:* Arama sonuçları sayfası açıktır ve sol filtreleme paneli görünür durumdadır.
+* *Test Adımları:*
+*# Sol filtre panelindeki filtreleme başlıkları incelenir.
+*# ""Kategori"" filtresi kontrol edilir.
+*# ""Yayınevi/Marka"" filtresi kontrol edilir.
+*# İlgili filtre başlığı altından bir seçenek işaretlenir.
+* *Beklenen Sonuç:*
+** Sol tarafta ilgili filtre başlıkları mevcut ve görünür olmalıdır.
+** Bir filtre seçeneği işaretlendiğinde liste filtrelenmiş sonuçları güncellemeli veya URL filtre parametresiyle yenilenmelidir.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0001i:,,{},Tamamlandı,22/Eki/26 9:23 AM,10004,KAN-5,User Story - 02 - Ürün Arama ve Listeleme
+TC09 – [AC9] Sayfayı Aşağı Kaydırarak Sonsuz Kaydırma / Sayfalama (Infinite Scroll / Pagination) Kontrolü,KAN-21,10020,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,22/Eki/26 9:09 AM,22/Eki/26 9:14 AM,,22/Eki/26 9:14 AM,,0,"* *İlgili Kriter:* [Arama] Aşağı Scroll ile Yeni Ürünlerin Yüklenmesi
+* *Test Tipi:* Pozitif / Etkileşim & Dinamik Yükleme
+* *Ön Koşul:* Çok sayıda ürünün listelendiği arama veya kategori sayfası açıktır.
+* *Test Adımları:*
+*# Sayfadaki başlangıç ürün sayısı veya ilk sayfa durumu kaydedilir.
+*# Sayfa en alta doğru kaydırılır ({{cy.scrollTo('bottom')}}).
+*# Yeni ürünlerin yüklenip yüklenmediği veya sonraki sayfa butonunun tetiklenip tetiklenmediği gözlemlenir.
+* *Beklenen Sonuç:*
+** Aşağı kaydırma yapıldığında yeni sayfanın ürünleri dinamik olarak listeye eklenmeli veya sayfa numaralandırması (Pagination) üzerinden yeni liste görüntülenmelidir.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0001k:,,{},Tamamlandı,22/Eki/26 9:14 AM,10004,KAN-5,User Story - 02 - Ürün Arama ve Listeleme
+TC06 – [AC6] Sıralama (Sort) Seçeneklerinin Doğrulanması,KAN-18,10017,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,22/Eki/26 9:08 AM,22/Eki/26 9:14 AM,,22/Eki/26 9:14 AM,,0,"* *İlgili Kriter:* [Sıralama] Menü Seçenekleri
+* *Test Tipi:* Pozitif / UI & Fonksiyonel Kontrol
+* *Ön Koşul:* Arama sonuçları sayfası ({{/arama}}) açıktır.
+* *Test Adımları:*
+*# Arama sonuçları sayfasının sağ üstündeki sıralama açılır menüsüne (dropdown) tıklanır.
+*# Açılan listedeki sıralama seçenekleri kontrol edilir.
+* *Beklenen Sonuç:*
+** Sıralama menüsü altında şu seçenekler eksiksiz listelenmelidir:
+*** ""Varsayılan Sıralama"" (veya Varsayılan)
+*** ""Yeniden eskiye""
+*** ""Eskiden yeniye""
+*** ""Fiyat Artan"" (veya Fiyata göre artan)
+*** ""Fiyat Azalan"" (veya Fiyata göre azalan)",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0001o:,,{},Tamamlandı,22/Eki/26 9:14 AM,10004,KAN-5,User Story - 02 - Ürün Arama ve Listeleme
+User Story - 03 - Ürün Detay Sayfası Görüntüleme ve Sepete Ekleme,KAN-22,10021,Epik,Yapılacaklar,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,22/Eki/26 9:28 AM,22/Eki/26 9:28 AM,,,,0,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,purple,0|i0001w:,,{},Yapılacaklar,22/Eki/26 9:28 AM,,,
+TC01 – [AC1] Ürün Detay Sayfasına Yönlendirme Doğrulaması,KAN-23,10022,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,22/Eki/26 9:29 AM,22/Eki/26 9:36 AM,,22/Eki/26 9:36 AM,,0,"* *İlgili Kriter:* AC1 – [Navigasyon]
+* *Test Tipi:* Pozitif / Fonksiyonel & Navigasyon
+* *Ön Koşul:* Kullanıcı ürün listeleme veya arama sonuçları sayfasındadır (Örn: {{/arama?q=Roman}}).
+* *Test Adımları:*
+*# Ürün listesindeki ilk ürün kartının görseline veya ürün adına tıklanır.
+*# Yönlendirilen sayfa URL'i ve sayfa yapısı incelenir.
+* *Beklenen Sonuç:*
+** Kullanıcı ilgili ürüne özel ürün detay sayfasına yönlendirilmelidir (URL arama parametresinden çıkıp ürün slug/linkine geçmelidir).
+** Ürün detay sayfası ve ürün başlığı görünür olmalıdır.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0002b:,,{},Tamamlandı,22/Eki/26 9:36 AM,10021,KAN-22,User Story - 03 - Ürün Detay Sayfası Görüntüleme ve Sepete Ekleme
+TC02 – [AC2] Ürün Detay Sayfasında Temel Bilgilerin Doğrulanması,KAN-24,10023,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,22/Eki/26 9:30 AM,22/Eki/26 9:36 AM,,22/Eki/26 9:36 AM,,0,"* *İlgili Kriter:* AC2 – [Temel Bilgiler]
+* *Test Tipi:* Pozitif / UI & Veri Doğrulama
+* *Ön Koşul:* Herhangi bir ürünün detay sayfası açıktır.
+* *Test Adımları:*
+*# Ürün detay sayfasındaki temel bilgi alanları incelenir.
+*# Ürün Adı, Yazar, Yayınevi ve Fiyat alanları kontrol edilir.
+* *Beklenen Sonuç:*
+** *Ürün Adı:* Belirgin ve görünür olmalıdır.
+** *Yazar:* Yazar bilgisi sayfada görünür ve dolu olmalıdır.
+** *Yayınevi:* Yayınevi/Marka bilgisi görünür ve dolu olmalıdır.
+** *Fiyat:* Güncel satış fiyatı (TL/₺ simgesi ile) görünür olmalıdır.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0002i:,,{},Tamamlandı,22/Eki/26 9:36 AM,10021,KAN-22,User Story - 03 - Ürün Detay Sayfası Görüntüleme ve Sepete Ekleme
+TC06 – [AC6] Sepet İkonundaki Ürün Sayacının Güncellenmesi (,KAN-28,10027,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,22/Eki/26 9:32 AM,22/Eki/26 9:36 AM,,22/Eki/26 9:36 AM,,0,"* *İlgili Kriter:* AC6 – [Sepet İkonu Güncellemesi]
+* *Test Tipi:* Pozitif / Durum (State) & UI Güncellemesi
+* *Ön Koşul:* Ürün detay sayfasındadır.
+* *Test Adımları:*
+*# Sağ üst köşedeki sepet ikonundaki başlangıç ürün sayısı not edilir (örn: 0).
+*# ""Sepete Ekle"" butonuna tıklanır.
+*# Sağ üstteki sepet sayacı tekrar kontrol edilir.
+* *Beklenen Sonuç:*
+** Sağ üst köşedeki sepet ikonunda bulunan ürün sayısı '1' artmalıdır (Örn: 0 iken 1 olmalıdır).",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0002j:,,{},Tamamlandı,22/Eki/26 9:36 AM,10021,KAN-22,User Story - 03 - Ürün Detay Sayfası Görüntüleme ve Sepete Ekleme
+TC05 – [AC5] Sepete Ekleme Sonrası Onay Mesajı ve Eylem Butonları Kontrolü,KAN-27,10026,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,22/Eki/26 9:31 AM,22/Eki/26 9:36 AM,,22/Eki/26 9:36 AM,,0,"* *İlgili Kriter:* AC5 – [Sepete Ekleme Onayı]
+* *Test Tipi:* Pozitif / Fonksiyonel & Modal/Popup Doğrulama
+* *Ön Koşul:* Ürün detay sayfasındadır ve ""Sepete Ekle"" butonu aktiftir.
+* *Test Adımları:*
+*# ""Sepete Ekle"" butonuna tıklanır.
+*# Açılan bildirim kartı veya modal popup incelenir.
+* *Beklenen Sonuç:*
+** Ekranda ""Ürün başarıyla sepete eklendi"" onay mesajı (veya benzeri toast/modal bildirimi) görüntülenmelidir.
+** Kullanıcıya seçenek sunan *""Sepete Git""* ve *""Satın Al""* (veya Siparişi Tamamla) butonları görünür olmalıdır.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0002l:,,{},Tamamlandı,22/Eki/26 9:36 AM,10021,KAN-22,User Story - 03 - Ürün Detay Sayfası Görüntüleme ve Sepete Ekleme
+"TC04 – [AC4] ""Sepete Ekle"" Butonunun Varlığı ve İşlevselliği",KAN-26,10025,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,22/Eki/26 9:31 AM,22/Eki/26 9:36 AM,,22/Eki/26 9:36 AM,,0,"* *İlgili Kriter:* AC4 – [Sepete Ekle]
+* *Test Tipi:* Pozitif / UI Eleman Kontrolü
+* *Ön Koşul:* Ürün detay sayfası açıktır.
+* *Test Adımları:*
+*# Fiyat bilgisinin altındaki işlem butonları incelenir.
+*# ""Sepete Ekle"" butonu kontrol edilir.
+* *Beklenen Sonuç:*
+** ""Sepete Ekle"" butonu fiyat alanının hemen altında, görünür, tıklanabilir ve aktif ({{enabled}}) durumda olmalıdır.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0002p:,,{},Tamamlandı,22/Eki/26 9:36 AM,10021,KAN-22,User Story - 03 - Ürün Detay Sayfası Görüntüleme ve Sepete Ekleme
+"TC03 – [AC3] ""Ürün Hakkında Bilgiler"" Bölümündeki Özelliklerin Doğrulanması",KAN-25,10024,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,22/Eki/26 9:30 AM,22/Eki/26 9:36 AM,,22/Eki/26 9:36 AM,,0,"* *İlgili Kriter:* AC3 – [Ürün Özellikleri]
+* *Test Tipi:* Pozitif / UI & İçerik Kontrolü
+* *Ön Koşul:* Ürün detay sayfası açıktır.
+* *Test Adımları:*
+*# Sayfada ""Ürün Hakkında Bilgiler"" / ""Özellikler"" bölümüne kaydırılır.
+*# Teknik özellik etiketleri (Türü, ISBN, Sayfa Sayısı, Kağıt Tipi, Basım Yılı vb.) incelenir.
+* *Beklenen Sonuç:*
+** ""Ürün Hakkında Bilgiler"" tablosunda/alanında ISBN, Sayfa Sayısı, Basım Yılı gibi detaylı ürün özellikleri eksiksiz yer almalıdır.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0002w:,,{},Tamamlandı,22/Eki/26 9:36 AM,10021,KAN-22,User Story - 03 - Ürün Detay Sayfası Görüntüleme ve Sepete Ekleme
+User Story - 04 - Sepet Yönetimi ve Kontrolü,KAN-29,10028,Epik,Yapılacaklar,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,22/Eki/26 9:42 AM,22/Eki/26 9:42 AM,,,,0,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,yellow,0|i00038:,,{},Yapılacaklar,22/Eki/26 9:42 AM,,,
+"TC01 – [AC1] Sağ Sepet Panelinin Açılması, Fiyat Tutarlılığı ve Sepet Sayfasına Yönlendirme",KAN-30,10029,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,22/Eki/26 9:43 AM,22/Eki/26 10:14 AM,,22/Eki/26 10:14 AM,,0,"* *İlgili Kriter:* AC1 – [Sepete Erişim]
+* *Test Tipi:* Pozitif / UI & Navigasyon & Hesaplama
+* *Ön Koşul:* Kullanıcı sepete en az 1 ürün eklemiş durumdadır.
+* *Test Adımları:*
+*# Sağ üst köşedeki sepet ikonuna/butonuna tıklanır.
+*# Sağ taraftan açılan ""Sepetim"" navigasyon çekmecesi (drawer / mini cart) incelenir.
+*# Mini sepette listelenen ürünlerin tutarları ile alt kısımdaki ""Genel Toplam"" tutarının matematiksel tutarlılığı kontrol edilir.
+*# ""Sepete Git"" butonuna tıklanır.
+* *Beklenen Sonuç:*
+** Sepet ikonuna tıklandığında sağ panel animasyonla/düzgünce açılmalıdır.
+** Sağ paneldeki ürün fiyatları toplamı ile gösterilen ""Genel Toplam"" birbirini tutmalıdır.
+** ""Sepete Git"" butonuna tıklandığında kullanıcı {{/sepet}} sayfasına yönlendirilmelidir (URL {{/sepet}} içermelidir).",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0003c:,,{},Tamamlandı,22/Eki/26 10:14 AM,10028,KAN-29,User Story - 04 - Sepet Yönetimi ve Kontrolü
+TC02 – [AC2] Sepet Sayfasında Ürün Satır Bileşenlerinin Doğrulanması,KAN-31,10030,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,22/Eki/26 9:43 AM,22/Eki/26 9:59 AM,,22/Eki/26 9:59 AM,,0,"* *İlgili Kriter:* AC2 – [Ürün Bilgileri]
+* *Test Tipi:* Pozitif / Veri & UI Doğrulama
+* *Ön Koşul:* Sepet sayfasında ({{/sepet}}) en az bir ürün listelenmektedir.
+* *Test Adımları:*
+*# Sepet tablosunda/listesinde yer alan ilk ürün satırı incelenir.
+*# Ürün adı, birim fiyat, adet inputu/kutusu ve satır toplam tutarı kontrol edilir.
+* *Beklenen Sonuç:*
+** *Ürün Adı:* Görünür ve boş olmamalıdır.
+** *Birim Fiyat:* Ürünün birim fiyatı görünür olmalıdır.
+** *Adet:* Adet bilgisi (örn: 1) açıkça görünmelidir.
+** *Toplam Tutar:* (Birim Fiyat × Adet) formülüne uygun şekilde ürün satır toplam tutarı doğru gösterilmelidir.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0003n:,,{},Tamamlandı,22/Eki/26 9:59 AM,10028,KAN-29,User Story - 04 - Sepet Yönetimi ve Kontrolü
+TC03 – [AC3] Sepet Özeti / Toplamı Bölümünde Maliyet Hesaplama Doğrulaması,KAN-32,10031,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,22/Eki/26 9:44 AM,22/Eki/26 9:59 AM,,22/Eki/26 9:59 AM,,0,"* *İlgili Kriter:* AC3 – [Sepet Toplamı]
+* *Test Tipi:* Pozitif / Fonksiyonel & Hesaplama Kontrolü
+* *Ön Koşul:* Sepet sayfası ({{/sepet}}) açıktır.
+* *Test Adımları:*
+*# Ekranın sağındaki ""Sepet Toplamı / Sipariş Özeti"" paneli incelenir.
+*# ""Sepet Toplamı"" (Ara Toplam), ""Kargo Ücreti"" ve ""Genel Toplam"" değerleri okunur.
+* *Beklenen Sonuç:*
+** Sepet Toplamı (Ürünlerin toplamı) doğru gösterilmelidir.
+** Kargo Ücreti (ücretsiz kargo baremi sağlanmışsa 0 TL/Ücretsiz, sağlanmamışsa standart kargo bedeli) doğru gösterilmelidir.
+** {{Genel Toplam = Sepet Toplamı + Kargo Ücreti}} matematiksel eşitliği sağlanmalı ve doğru formatta görüntülenmelidir.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0003q:,,{},Tamamlandı,22/Eki/26 9:59 AM,10028,KAN-29,User Story - 04 - Sepet Yönetimi ve Kontrolü
+"TC06 – [AC6] ""Sepeti Temizle"" Butonu ile Tüm Ürünlerin Silinmesi",KAN-35,10034,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,23/Eki/26 9:08 AM,23/Eki/26 9:40 AM,,23/Eki/26 9:40 AM,,0,"* *İlgili Kriter:* [Ürün Silme] Toplu Sepet Temizleme
+* *Test Tipi:* Pozitif / Fonksiyonel
+* *Ön Koşul:* Kullanıcı sepet sayfasındadır ({{/sepet}}) ve sepette bir veya birden fazla ürün bulunmaktadır.
+* *Test Adımları:*
+*# Ürün listesinin sol altında yer alan ""Sepeti Temizle"" butonuna tıklanır.
+*# Gerekli aksiyon tamamlandığında sepet durumu incelenir.
+* *Beklenen Sonuç:*
+** ""Sepeti Temizle"" butonuna tıklandığında sepetteki tüm ürünler doğrudan kaldırılmalıdır.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0003r:,,{},Tamamlandı,23/Eki/26 9:40 AM,10028,KAN-29,User Story - 04 - Sepet Yönetimi ve Kontrolü
+"TC07 – [AC7] Boş Sepet Ekranı ve ""Alışverişe Devam Et"" Butonu Doğrulaması",KAN-36,10035,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,23/Eki/26 9:09 AM,23/Eki/26 9:40 AM,,23/Eki/26 9:40 AM,,0,"* *İlgili Kriter:* [Boş Sepet Durumu] Bilgilendirme ve Yönlendirme
+* *Test Tipi:* Pozitif / UI & Durum (State) Kontrolü
+* *Ön Koşul:* Kullanıcı sepet sayfasındadır ({{/sepet}}) ve sepet boştur (tüm ürünler silinmiştir).
+* *Test Adımları:*
+*# Sayfada görüntülenen boş sepet bilgilendirme metni kontrol edilir.
+*# ""Alışverişe Devam Et"" butonunun varlığı ve görünürlüğü kontrol edilir.
+* *Beklenen Sonuç:*
+** Ekranda *""Sepetinizde ürün bulunmamaktadır.""* (veya benzeri boş sepet) mesajı gösterilmelidir.
+** Tıklanabilir ve görünür bir *""Alışverişe Devam Et""* butonu yer almalıdır.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0003s:,,{},Tamamlandı,23/Eki/26 9:40 AM,10028,KAN-29,User Story - 04 - Sepet Yönetimi ve Kontrolü
+"TC08 – [AC8] Sepette Ürün Varken ""Satın Al"" Butonunun Kontrolü",KAN-37,10036,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,23/Eki/26 9:09 AM,23/Eki/26 9:40 AM,,23/Eki/26 9:40 AM,,0,"* *İlgili Kriter:* [Satın Alma Butonu] Sipariş Adımına Geçiş
+* *Test Tipi:* Pozitif / UI & Navigasyon
+* *Ön Koşul:* Sepet sayfasında ({{/sepet}}) en az bir adet ürün bulunmaktadır.
+* *Test Adımları:*
+*# Sağ taraftaki sipariş özeti panelinde yer alan turuncu *""Satın Al""* butonu incelenir.
+*# Butonun tıklanabilirliği ve aktiflik durumu doğrulanır.
+*# ""Satın Al"" butonuna tıklanır.
+* *Beklenen Sonuç:*
+** ""Satın Al"" butonu görünür, etkin ({{enabled}}) olmalıdır.
+** Tıklandığında kullanıcı checkout / adres / giriş yapma gibi bir sonraki satın alma adımına yönlendirilmelidir.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0003v:,,{},Tamamlandı,23/Eki/26 9:40 AM,10028,KAN-29,User Story - 04 - Sepet Yönetimi ve Kontrolü
+TC09 – [AC9] Ürün Detay Sayfasından Sepete Ekleme ve Popup Üzerinden Sepete Gitme,KAN-38,10037,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,23/Eki/26 9:10 AM,23/Eki/26 9:40 AM,,23/Eki/26 9:40 AM,,0,"* *İlgili Kriter:* [Sepete Erişim] Detay Sayfası & Popup Navigasyonu
+* *Test Tipi:* Pozitif / E2E & Navigasyon
+* *Ön Koşul:* Kullanıcı herhangi bir ürünün detay sayfasındadır (Örn: {{/cumhuriyetin-ilk-sabahi}}).
+* *Test Adımları:*
+*# Ürün detay sayfasındaki ""Sepete Ekle"" butonuna tıklanır.
+*# Açılan onay modal/popup'ında yer alan ""Sepete Git"" butonuna tıklanır.
+* *Beklenen Sonuç:*
+** Popup başarıyla açılmalı ve ""Sepete Git"" butonu görünür olmalıdır.
+** ""Sepete Git"" butonuna tıklandığında kullanıcı {{/sepet}} sayfasına yönlendirilmelidir.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0003x:,,{},Tamamlandı,23/Eki/26 9:40 AM,10028,KAN-29,User Story - 04 - Sepet Yönetimi ve Kontrolü
+TC05 – [AC5] Tekil Ürün Silme ve Onay Menüsü ile Sepetten Kaldırma,KAN-34,10033,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,23/Eki/26 9:08 AM,23/Eki/26 9:40 AM,23/Eki/26 9:13 AM,23/Eki/26 9:40 AM,,0,"* *İlgili Kriter:* [Ürün Silme] Çöp Kutusu İkonu & Onay Menüsü
+* *Test Tipi:* Pozitif / Fonksiyonel & Modal/Dialog Kontrolü
+* *Ön Koşul:* Kullanıcı sepet sayfasındadır ({{/sepet}}) ve sepette en az 1 ürün bulunmaktadır.
+* *Test Adımları:*
+*# Ürün satırında sağ tarafta yer alan çöp kutusu (sil) ikonuna tıklanır.
+*# Açılan onay menüsü/diyaloğu incelenir.
+*# Onay penceresindeki ""Sil"" / ""Evet"" butonuna tıklanır.
+* *Beklenen Sonuç:*
+** Çöp kutusuna tıklandığında silme onay mekanizması açılmalıdır.
+** Onay verildiğinde ilgili ürün sepet listesinden tamamen kaldırılmalıdır.
+** Ürün sayısı ve toplam tutar güncellenmelidir.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0003y:,,{},Tamamlandı,23/Eki/26 9:40 AM,10028,KAN-29,User Story - 04 - Sepet Yönetimi ve Kontrolü
+TC04 – [AC4] Ürün Adedini Artırma ve Tutar Güncellemelerinin Kontrolü,KAN-33,10032,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,22/Eki/26 9:44 AM,22/Eki/26 9:59 AM,,22/Eki/26 9:59 AM,,0,"* *İlgili Kriter:* AC4 – [Adet Artırma]
+* *Test Tipi:* Pozitif / Dinamik Etkileşim & Fiyat Güncellemesi
+* *Ön Koşul:* Sepet sayfasında adedi 1 olan bir ürün bulunmaktadır.
+* *Test Adımları:*
+*# Ürünün başlangıç birim fiyatı ve genel toplamı not edilir.
+*# Adet alanının yanındaki *""+"" (Artır)* butonuna tıklanır.
+*# Adet kutusundaki yeni değer incelenir.
+*# Ürünün satır toplam tutarı ve sayfanın ""Genel Toplam"" tutarı incelenir.
+* *Beklenen Sonuç:*
+** Adet değeri 1'den 2'ye yükselmelidir.
+** Ürünün satır toplam tutarı {{(Birim Fiyat × 2)}} olacak şekilde anında güncellenmelidir.
+** Sağ paneldeki ""Genel Toplam"" değeri yeni ürün tutarına göre anında artmalıdır.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i00040:,,{},Tamamlandı,22/Eki/26 9:59 AM,10028,KAN-29,User Story - 04 - Sepet Yönetimi ve Kontrolü
+TC10 – [AC10] Ana Sayfadaki Ürün Kartından Sepete Ekleme ve Popup Üzerinden Sepete Gitme,KAN-39,10038,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,23/Eki/26 9:11 AM,23/Eki/26 9:40 AM,,23/Eki/26 9:40 AM,,0,"* *İlgili Kriter:* [Sepete Erişim] Ana Sayfa Vitrini & Popup Navigasyonu
+* *Test Tipi:* Pozitif / E2E & Navigasyon
+* *Ön Koşul:* Kullanıcı Kitapsepeti ana sayfasındadır ({{[https://www.kitapsepeti.com/](https://www.kitapsepeti.com/)}}).
+* *Test Adımları:*
+*# Ana sayfada vitrinde yer alan herhangi bir ürün kartındaki ""Sepete Ekle"" butonuna tıklanır.
+*# Açılan bildirim kartı / popup'taki ""Sepete Git"" butonuna tıklanır.
+* *Beklenen Sonuç:*
+** Ürün sepete eklenmeli ve bilgilendirme popup'ı açılmalıdır.
+** ""Sepete Git"" butonuna tıklandığında kullanıcı doğrudan {{/sepet}} sayfasına ulaşmalıdır.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i00056:,,{},Tamamlandı,23/Eki/26 9:40 AM,10028,KAN-29,User Story - 04 - Sepet Yönetimi ve Kontrolü
+User Story - 05 - Ödeme ve Sipariş Onayı,KAN-40,10039,Epik,Yapılacaklar,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,23/Eki/26 9:42 AM,23/Eki/26 9:42 AM,,,,0,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,dark_green,0|i0005k:,,{},Yapılacaklar,23/Eki/26 9:42 AM,,,
+"TC01 – [AC1] Sepet Sayfasından ""Satın Al"" Butonu ile Adres Bilgileri Sayfasına Yönlendirme",KAN-41,10040,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,23/Eki/26 10:01 AM,23/Eki/26 10:49 AM,,23/Eki/26 10:49 AM,,0,"* *Kabul Kriteri:* AC1 [Adres Bilgileri]
+* *Test Tipi:* Fonksiyonel / Navigasyon & E2E
+* *Ön Koşul:*
+*# Kullanıcı sisteme giriş yapmış olmalıdır (Adres bilgisi hesaba önceden tanımlanmıştır).
+*# Sepette en az 1 adet ürün bulunmalıdır.
+*# Kullanıcı Sepetim ({{/sepet}}) sayfasındadır.
+* *Test Adımları:*
+*# Sepet özet panelindeki turuncu *""Satın Al""* butonuna tıklanır.
+*# Yönlendirilen sayfanın URL'i ve sayfa başlığı kontrol edilir.
+* *Beklenen Sonuç:*
+** Kullanıcı başarıyla *""Adres Bilgileri"" / Teslimat* sayfasına yönlendirilmelidir (URL sepet dışına çıkıp sipariş/adres adımını içermelidir).
+** Kayıtlı adres bilgileri ekranda listelenmelidir.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0005q:,,{},Tamamlandı,23/Eki/26 10:49 AM,10039,KAN-40,User Story - 05 - Ödeme ve Sipariş Onayı
+"TC02 – [AC2] ""Ödeme Adımına Geç"" Butonu ile Ödeme Bilgileri Ekranına Yönlendirme",KAN-42,10041,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,23/Eki/26 10:01 AM,23/Eki/26 10:49 AM,,23/Eki/26 10:49 AM,,0,"* *Kabul Kriteri:* AC2 [Ödeme Bilgileri]
+* *Test Tipi:* Fonksiyonel / Navigasyon
+* *Ön Koşul:* Kullanıcı Adres Bilgileri / Teslimat adımındadır ve teslimat adresi seçilidir.
+* *Test Adımları:*
+*# Sayfadaki *""Ödeme Adımına Geç""* (veya benzeri devam et) butonuna tıklanır.
+*# Yönlendirilen sayfa URL'i ve görünümü kontrol edilir.
+* *Beklenen Sonuç:*
+** Kullanıcı başarıyla *""Ödeme Bilgileri""* ekranına yönlendirilmelidir.
+** Ödeme ve kargo alanları ekranda görüntülenmelidir.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i00063:,,{},Tamamlandı,23/Eki/26 10:49 AM,10039,KAN-40,User Story - 05 - Ödeme ve Sipariş Onayı
+TC05 – [Kombinasyon / Kullanılabilirlik] Kargo Seçenekleri Arasında Geçiş Yapılabilmesi,KAN-45,10044,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,23/Eki/26 10:02 AM,23/Eki/26 3:02 PM,23/Eki/26 10:50 AM,23/Eki/26 3:02 PM,,0,"* *Kabul Kriteri:* AC3 Destekleyici
+* *Test Tipi:* Fonksiyonel / Etkileşim
+* *Ön Koşul:* Kullanıcı ödeme adımındadır, default olarak PTT Kargo seçilidir.
+* *Test Adımları:*
+*# *""Hepsijet""* kargo seçeneğine tıklanır.
+*# Seçimin Hepsijet'e geçip geçmediği ve sipariş özeti/kargo ücreti alanının güncellenip güncellenmediği incelenir.
+* *Beklenen Sonuç:*
+** Seçim başarıyla *Hepsijet* olarak değişmeli, PTT Kargo işareti kalkmalıdır.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i00064:,,{},Tamamlandı,23/Eki/26 3:02 PM,10039,KAN-40,User Story - 05 - Ödeme ve Sipariş Onayı
+"TC04 – [AC4] Ödeme Seçeneklerinin (""iyzico ile öde"" ve ""Kartla Ödeme"") Sunulması",KAN-44,10043,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,23/Eki/26 10:02 AM,23/Eki/26 3:02 PM,,23/Eki/26 3:02 PM,,0,"* *Kabul Kriteri:* AC4 [Ödeme Seçenekleri]
+* *Test Tipi:* UI & Fonksiyonel Doğrulama
+* *Ön Koşul:* Kullanıcı ödeme adımı ekranındadır.
+* *Test Adımları:*
+*# Ödeme yöntemleri sekmesi/bölümü incelenir.
+*# *""iyzico ile öde""* seçeneğinin varlığı ve görünürlüğü kontrol edilir.
+*# *""Kartla Ödeme""* (Kredi/Banka Kartı) seçeneğinin varlığı ve görünürlüğü kontrol edilir.
+* *Beklenen Sonuç:*
+** Kullanıcıya *""iyzico ile öde""* ve *""Kartla Ödeme""* seçenekleri net, anlaşılır ve seçilebilir şekilde sunulmalıdır.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i00065:,,{},Tamamlandı,23/Eki/26 3:02 PM,10039,KAN-40,User Story - 05 - Ödeme ve Sipariş Onayı
+TC03 – [AC3] Kargo Seçeneklerinin Doğrulanması ve PTT Kargo'nun Varsayılan (Default) Seçimi,KAN-43,10042,Görev,İNCELEMEDE,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,23/Eki/26 10:01 AM,23/Eki/26 3:06 PM,23/Eki/26 3:05 PM,,,0,"* *Kabul Kriteri:* AC3 [Ödeme Bilgileri - Kargo Seçenekleri]
+* *Test Tipi:* UI & Fonksiyonel Doğrulama
+* *Ön Koşul:* Kullanıcı ödeme/sipariş tamamlama ekranındadır.
+* *Test Adımları:*
+*# Kargo firması seçim alanı incelenir.
+*# Seçenekler arasında *""PTT Kargo""* ve *""Hepsijet""* (HepsiJET) alternatiflerinin yer aldığı doğrulanır.
+*# Sayfa ilk açıldığında hangi kargo seçeneğinin işaretli/aktif olduğu kontrol edilir.
+* *Beklenen Sonuç:*
+** Listede hem *""PTT Kargo""* hem de *""Hepsijet""* seçenekleri görünür olmalıdır.
+** *""PTT Kargo""* seçeneği varsayılan (default) olarak radyo butonu / onay kutusu işaretli ({{checked}}) gelmelidir.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,23/Eki/26 3:06 PM;c8b6924e-e0eb-4ebe-8c72-20d2ab1c1558;Ekran Resmi 2026-10-23 10.08.30.png;https://melekyilmaz2307.atlassian.net/rest/api/3/attachment/content/10001,23/Eki/26 3:05 PM;c8b6924e-e0eb-4ebe-8c72-20d2ab1c1558;Ekran Resmi 2026-10-23 15.05.29.png;https://melekyilmaz2307.atlassian.net/rest/api/3/attachment/content/10000,,,0|i00068:,,{},Devam Ediyor,23/Eki/26 3:06 PM,10039,KAN-40,User Story - 05 - Ödeme ve Sipariş Onayı
+[US05-AC3] Ödeme Bilgileri Ekranında Varsayılan Kargo Seçeneği Uyuşmazlığı (PTT Kargo Yerine HEPSİJET Varsayılan Olarak Seçili Geliyor),KAN-46,10045,Hata,Bug,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,23/Eki/26 3:05 PM,23/Eki/26 3:06 PM,,,,0,"Adımlar:
+
+# Kayıtlı kullanıcı ile giriş yapılıp sepete ürün eklenir.
+# Sepetten ""Satın Al"" butonuna basılır.
+# Adres adımından ""Ödeme Adımına Geç"" butonuna tıklanır.
+# Açılan sayfadaki ""KARGO SEÇENEKLERİ"" incelenir.
+
+ Beklenen Sonuç (AC3):
+""PTT Kargo"" seçeneğinin varsayılan (default) olarak seçili gelmesi gerekir.
+
+h3. Gerçekleşen Sonuç:
+""HEPSİJET"" kargo seçeneği varsayılan olarak seçili gelmektedir; PTT Kargo seçili değildir. Cypress TC03 testi bu sebeple fail vermektedir.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0006j:,,{},Yapılacaklar,23/Eki/26 3:05 PM,10039,KAN-40,User Story - 05 - Ödeme ve Sipariş Onayı
+TC06 – [Buton Aktivasyonu - Pozitif] Kart Bilgileri Eksiksiz Girildiğinde Ödeme Butonunun Aktifleşmesi,KAN-47,10046,Görev,Yapılacaklar,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,23/Eki/26 3:07 PM,23/Eki/26 3:07 PM,,,,0,"* *İlgili Kriter:* Buton Aktivasyonu - Pozitif
+* *Test Tipi:* UI & Fonksiyonel / Pozitif Doğrulama
+* *Ön Koşul:* Kullanıcı ödeme adımındadır ({{/order}}), ""Kartla Ödeme"" sekmesi seçilidir ve sepette ürün vardır.
+JPG
+
+* *Test Adımları:*
+*# Kart Üzerindeki Ad Soyad alanına geçerli bir isim girilir.
+*# Kart Numarası alanına geçerli (test) kart numarası girilir.
+*# Son Kullanma Tarihi (Ay / Yıl) bilgileri seçilir / girilir.
+*# CVC / CVV alanına geçerli 3 haneli güvenlik kodu girilir.
+*# Varsa yasal bilgilendirme / sözleşme onay kutusu işaretlenir.
+*# Sayfanın altındaki/sağındaki ödeme butonu ({{... TL ÖDE}}) kontrol edilir.
+* *Beklenen Sonuç:*
+** Tüm zorunlu alanlar doldurulduğunda *""... TL ÖDE""* butonu aktif (tıklanabilir ve mavi renkte) hale gelmelidir.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0006m:,,{},Yapılacaklar,23/Eki/26 3:07 PM,10039,KAN-40,User Story - 05 - Ödeme ve Sipariş Onayı
+TC07 – [Buton Aktivasyonu - Negatif] Eksik Kart Bilgileriyle Ödeme Denemesi ve Doğrulama Uyarıları,KAN-48,10047,Görev,Yapılacaklar,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,23/Eki/26 3:08 PM,23/Eki/26 3:08 PM,,,,0,"* *İlgili Kriter:* Buton Aktivasyonu - Negatif
+* *Test Tipi:* Negatif / Form Validasyonu (Hata Yönetimi)
+* *Ön Koşul:* Kullanıcı ödeme adımındadır ({{/order}}), ""Kartla Ödeme"" sekmesi seçilidir.
+JPG
+
+* *Test Adımları:*
+*# Kart formundaki bazı zorunlu alanlar (örneğin sadece Kart Numarası veya CVC) bilerek boş bırakılır.
+*# *""... TL ÖDE""* butonuna tıklanır.
+*# Boş bırakılan alanların altındaki hata/uyarı alanları incelenir.
+* *Beklenen Sonuç:*
+** Sipariş tamamlanmamalı ve ödeme adımı geçilmemelidir.
+** Eksik bırakılan text alanlarının hemen altında kırmızı renkli *""Lütfen tüm alanları doldurunuz""* (veya ilgili zorunlu alan uyarısı) hata mesajı görüntülenmelidir.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0006w:,,{},Yapılacaklar,23/Eki/26 3:08 PM,10039,KAN-40,User Story - 05 - Ödeme ve Sipariş Onayı
+TC08 – [Sipariş Özeti] Ödeme Adımında Sipariş Özeti Kutusu ve Genel Toplam Tutarının Doğrulanması,KAN-49,10048,Görev,Yapılacaklar,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,23/Eki/26 3:08 PM,23/Eki/26 3:08 PM,,,,0,"* *İlgili Kriter:* Sipariş Özeti
+* *Test Tipi:* UI & Veri Doğrulama (Hesaplama Kontrolü)
+* *Ön Koşul:* Kullanıcı ödeme adımındadır ({{/order}}).
+JPG
+
+* *Test Adımları:*
+*# Sayfanın sağ tarafında yer alan *""Sipariş Özeti""* paneli kontrol edilir.
+*# Paneldeki *Sepet Toplamı*, *Kargo Ücreti* ve varsa *İndirim* kalemleri incelenir.
+*# *Genel Toplam* satırındaki tutarın (Sepet Toplamı + Kargo Ücreti - İndirimler) matematiksel olarak doğru yansıtıldığı kontrol edilir.
+* *Beklenen Sonuç:*
+** Sayfanın sağ tarafında son bir *""Sipariş Özeti""* kutusu görünür olmalıdır.
+** Kutuda hesaplanan *""Genel Toplam""* tutarı ekranda net şekilde gösterilmeli ve hesaplama ile tam olarak eşleşmelidir.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0006y:,,{},Yapılacaklar,23/Eki/26 3:08 PM,10039,KAN-40,User Story - 05 - Ödeme ve Sipariş Onayı
+User Story - 06 - Misafir Olarak Satın Alma Akışı,KAN-50,10049,Epik,Yapılacaklar,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,23/Eki/26 5:13 PM,23/Eki/26 5:13 PM,,,,0,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,green,0|i00077:,,{},Yapılacaklar,23/Eki/26 5:13 PM,,,
+"TC01 – [AC1] Ürünü Sepete Ekleme ve ""Satın Al"" ile Üye Giriş Sayfasına Yönlendirme",KAN-51,10050,Görev,Tamam,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,Tamamlandı,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,23/Eki/26 5:18 PM,23/Eki/26 6:53 PM,,23/Eki/26 6:53 PM,,0,"* *Kabul Kriteri:* AC1 [Yönlendirme]
+* *Test Tipi:* Fonksiyonel / Navigasyon & E2E
+* *Ön Koşul:* Kullanıcı sisteme giriş yapmamış (misafir/anonim kullanıcı) olmalıdır.
+* *Test Adımları:*
+*# Ana sayfaya ({{kitapsepeti.com}}) gidilir.
+*# Herhangi bir ürünün üzerine gelinerek *""Sepete Ekle""* butonuna tıklanır.
+*# Açılan bilgilendirme popup'ındaki *""Satın Al""* butonuna tıklanır.
+*# Yönlendirilen sayfanın URL adresi kontrol edilir.
+* *Beklenen Sonuç:*
+** Kullanıcı oturum açmadığı için doğrudan {{[https://www.kitapsepeti.com/siparis-uye-giris](https://www.kitapsepeti.com/siparis-uye-giris)}} (veya ilgili sipariş üye giriş) sayfasına yönlendirilmelidir.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i00078:,,{},Tamamlandı,23/Eki/26 6:53 PM,10049,KAN-50,User Story - 06 - Misafir Olarak Satın Alma Akışı
+"TC02 – [AC2] Sipariş Üye Giriş Sayfasında ""Üye Olmadan Devam Et"" Butonunun Varlığı ve Görünürlüğü",KAN-52,10051,Görev,İNCELEMEDE,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,23/Eki/26 5:19 PM,23/Eki/26 6:53 PM,23/Eki/26 6:48 PM,,,0,"* *Kabul Kriteri:* AC2 [Misafir Seçeneği]
+* *Test Tipi:* UI & Fonksiyonel Doğrulama
+* *Ön Koşul:* Kullanıcı {{/siparis-uye-giris}} sayfasındadır.
+* *Test Adımları:*
+*# Sayfadaki giriş ve devam seçenekleri incelenir.
+*# Misafir alışverişine olanak tanıyan butonun varlığı, metni ve tıklanabilirliği kontrol edilir.
+* *Beklenen Sonuç:*
+** Sayfa üzerinde net, belirgin ve tıklanabilir bir *""Üye Olmadan Devam Et""* butonu bulunmalı ve görünür olmalıdır.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0007g:,,{},Devam Ediyor,23/Eki/26 6:53 PM,10049,KAN-50,User Story - 06 - Misafir Olarak Satın Alma Akışı
+"TC03 – [AC3] ""Üye Olmadan Devam Et"" Butonuna Tıklayarak Adres Formu Sayfasına Geçiş",KAN-53,10052,Görev,Devam Ediyor,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,23/Eki/26 5:19 PM,23/Eki/26 6:53 PM,,,,0,"* *Kabul Kriteri:* AC3 [Adres Formu]
+* *Test Tipi:* Fonksiyonel / Navigasyon
+* *Ön Koşul:* Kullanıcı {{/siparis-uye-giris}} sayfasındadır.
+* *Test Adımları:*
+*# *""Üye Olmadan Devam Et""* butonuna tıklanır.
+*# Yönlendirilen sayfanın içeriği ve sayfa başlığı kontrol edilir.
+* *Beklenen Sonuç:*
+** Sayfa başarıyla yüklenmeli ve ekranda belirgin bir şekilde *""Adres Bilgileri""* başlığını taşıyan adres formu görüntülenmelidir.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0007v:,,{},Devam Ediyor,23/Eki/26 6:53 PM,10049,KAN-50,User Story - 06 - Misafir Olarak Satın Alma Akışı
+TC04 – [AC4] Misafir Adres Formu Zorunlu Alanlarının Doğrulanması,KAN-54,10053,Görev,Devam Ediyor,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,23/Eki/26 5:19 PM,23/Eki/26 6:53 PM,,,,0,"* *Kabul Kriteri:* AC4 [Form Alanları]
+* *Test Tipi:* UI & Form Kontrolü
+* *Ön Koşul:* Kullanıcı ""Adres Bilgileri"" formunun bulunduğu ekrandadır.
+* *Test Adımları:*
+*# Adres formu içerisindeki tüm giriş alanları tek tek kontrol edilir.
+*# Aşağıdaki alanların formda eksiksiz yer aldığı doğrulanır:
+*#* Ad Soyad
+*#* E-posta
+*#* Cep Telefonu
+*#* İl (Dropdown/Seçim)
+*#* İlçe (Dropdown/Seçim)
+*#* Mahalle (Dropdown/Seçim)
+*#* Açık Adres (Textarea/Input)
+* *Beklenen Sonuç:*
+** Belirtilen 7 adet form alanı eksiksiz, düzenli ve veri girişine uygun şekilde sayfada yer almalıdır.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i00082:,,{},Devam Ediyor,23/Eki/26 6:53 PM,10049,KAN-50,User Story - 06 - Misafir Olarak Satın Alma Akışı
+TC05 – [AC5] Zorunlu Alan Eksik Bırakıldığında Kırmızı Hata Mesajı Doğrulaması,KAN-55,10054,Görev,Devam Ediyor,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,23/Eki/26 5:20 PM,23/Eki/26 6:53 PM,,,,0,"* *Kabul Kriteri:* AC5 [Form Doğrulama-Negatif]
+* *Test Tipi:* Negatif / Form Validasyonu (Hata Yönetimi)
+* *Ön Koşul:* Kullanıcı ""Adres Bilgileri"" formundadır.
+* *Test Adımları:*
+*# Form alanlarından biri veya birkaçı (örneğin sadece *Ad Soyad* alanı) bilerek boş bırakılır.
+*# Diğer bazı alanlar geçerli verilerle doldurulur.
+*# Formun altındaki *""Devam Et""* (veya kaydet/devam) butonuna tıklanır.
+*# Boş bırakılan alanın çevresi ve altındaki uyarı metni kontrol edilir.
+* *Beklenen Sonuç:*
+** Form gönderilmemeli, bir sonraki adıma geçilmesine izin verilmemelidir.
+** Boş bırakılan alanın hemen altında veya ilgili alanda kırmızı renkte *""Lütfen bu alanı doldurunuz.""* (veya HTML5 standardında zorunlu alan) uyarısı gösterilmelidir.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0008g:,,{},Devam Ediyor,23/Eki/26 6:53 PM,10049,KAN-50,User Story - 06 - Misafir Olarak Satın Alma Akışı
+TC06 – [AC6] Adres Formunun Eksiksiz Doldurulup Kaydedilmesi ve Ödeme Adımına Geçiş,KAN-56,10055,Görev,Devam Ediyor,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,23/Eki/26 5:20 PM,23/Eki/26 6:53 PM,,,,0,"* *Kabul Kriteri:* AC6 [Başarılı Form Gönderimi]
+* *Test Tipi:* Fonksiyonel & E2E / Başarılı Akış
+* *Ön Koşul:* Kullanıcı ""Adres Bilgileri"" formundadır.
+* *Test Adımları:*
+*# *Ad Soyad:* Geçerli bir isim ve soyisim girilir (Örn: {{Ahmet Yılmaz}}).
+*# *E-posta:* Geçerli formatta e-posta girilir (Örn: {{misafir.test@example.com}}).
+*# *Cep Telefonu:* Geçerli bir numara girilir (Örn: {{5551234567}}).
+*# *İl / İlçe / Mahalle:* Listeden geçerli konumlar seçilir (Örn: {{İstanbul / Kadıköy / Caferağa}}).
+*# *Adres:* Detaylı açık adres metni girilir.
+*# *""Adresi Kaydet""* (veya Devam Et) butonuna tıklanır.
+*# Yeni sayfanın URL'i ve yüklenen ödeme bileşenleri kontrol edilir.
+* *Beklenen Sonuç:*
+** Adres bilgileri başarıyla kabul edilmelidir.
+** Kullanıcı, kargo ve ödeme yöntemlerinin (Kartla Ödeme, iyzico vb.) sunulduğu bir sonraki *""Ödeme Bilgileri"" (*{{/order}}*)* adımına başarıyla aktarılmalıdır.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,,,,,0|i0008m:,,{},Devam Ediyor,23/Eki/26 6:53 PM,10049,KAN-50,User Story - 06 - Misafir Olarak Satın Alma Akışı
+"[US06-AC2] Sipariş Giriş Sayfasında ""Üye Olmadan Devam Et"" Seçeneğinin Bulunmaması (Misafir Alışverişi Butonu Eksik)",KAN-57,10056,Hata,Bug,KAN,My Kanban Project,software,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,Medium,,,,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,23/Eki/26 6:55 PM,23/Eki/26 6:55 PM,23/Eki/26 6:55 PM,,,0,"Kabul kriteri: Kullanıcı sepetten sipariş adımlarına geçtiğinde, üye giriş sayfasında belirgin bir ""Üye Olmadan Devam Et"" butonu bulunmalıdır. 
+
+ Yeniden Oluşturma Adımları:
+
+ 1. Misafir kullanıcı olarak sepete ürün eklenir ve ""Satın Al"" butonuna basılır. 
+
+2. Açılan giriş ekranı incelenir.
+
+Beklenen Sonuç: Ekranda ""Üye Olmadan Devam Et"" butonu yer almalı ve tıklandığında misafir adres formuna yönlendirmelidir. 
+
+Gerçekleşen Sonuç: Sayfada yalnızca ""ÜYE GİRİŞİ"" ve ""ÜYE KAYIT"" seçenekleri yer almakta, ""Üye Olmadan Devam Et"" seçeneği bulunmamaktadır.",,melek yılmaz,712020:29f1c40a-026e-4fbc-b78d-5f94cc3d8e36,,,,,,,,,23/Eki/26 6:55 PM;c8b6924e-e0eb-4ebe-8c72-20d2ab1c1558;Ekran Resmi 2026-10-23 18.49.42.png;https://melekyilmaz2307.atlassian.net/rest/api/3/attachment/content/10002,,,,0|i0008z:,,{},Yapılacaklar,23/Eki/26 6:55 PM,10049,KAN-50,User Story - 06 - Misafir Olarak Satın Alma Akışı
