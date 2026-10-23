@@ -1,0 +1,14 @@
+# Bağımlılıklar (GitHub'a yüklenmemeli)
+node_modules/
+
+# Gizli Kullanıcı Giriş Bilgileri (GitHub'a ASLA gitmeyecek)
+cypress/fixtures/userData.json
+
+# Cypress Otomatik Üretilen Çıktılar
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# Çevre değişkenleri
+.env
+cypress.env.json
